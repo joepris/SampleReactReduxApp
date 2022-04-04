@@ -1,0 +1,57 @@
+#app {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 20px 0 20px 0;
+}
+
+.contain-fit {
+    object-fit: contain;
+}
+
+.box .speaker-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.box .speaker-img span {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+}
+
+.box .speaker-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box .speaker-img span {
+        border: 1px solid #f8f8f8;
+        box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px;
+    }
+
+.box .speaker-img img {
+    object-fit: contain;
+}
+
+.App-logo {
+    animation: rotation infinite 5s linear;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-logo-center{
+    justify-content: center;
+    align-content: center;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
