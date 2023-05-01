@@ -3,13 +3,13 @@
   "description": "React and Redux Pluralsight course by Cory House",
   "scripts": {
     "start": "run-p start:dev start:api",
-    "start:dev": "webpack serve --config webpack.config.dev.js --port 3000",
+    "start:dev": "webpack serve --config webpack.config.dev.js",
     "prestart:api": "node tools/createMockDb.js",
     "start:api": "node tools/apiServer.js",
     "test": "jest --watch"
   },
   "jest": {
-    "testEnvironment":"jsdom"
+    "testEnvironment": "jsdom"
   },
   "dependencies": {
     "bootstrap": "5.0.2",
@@ -53,9 +53,9 @@
     "redux-mock-store": "1.5.4",
     "rimraf": "3.0.2",
     "style-loader": "3.0.0",
-    "webpack": "5.44.0",
+    "webpack": "5.74.0",
     "webpack-bundle-analyzer": "4.4.2",
-    "webpack-cli": "4.9.0",
+    "webpack-cli": "4.10.0",
     "webpack-dev-server": "3.11.2"
   },
   "engines": {
